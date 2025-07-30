@@ -1,0 +1,144 @@
+/* 1. Import Fonts */
+/* @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600&display=swap"); */
+
+/* 2. Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #111;
+  padding: 1rem;
+}
+
+/* 3. Headings */
+h1,
+h2,
+h3 {
+  font-family: "Archivo Black", sans-serif;
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+
+/* 4. Utility Container */
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* 5. Navigation */
+header {
+  margin-bottom: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+/* 6. Buttons */
+.btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  background-color: #111;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+/* 7. Product Cards */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-card .info {
+  padding: 1rem;
+}
+
+.product-card .title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.product-card .price {
+  color: #222;
+  font-weight: bold;
+}
+
+/* 8. Grid (mobile first stack) */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* 9. Footer */
+footer {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #666;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+
+/* 10. Larger Screens (Tablet and Desktop) */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .btn {
+    width: auto;
+  }
+
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+}
