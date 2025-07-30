@@ -136,7 +136,6 @@ nav a:hover {
 }
 .hero-btn {
   margin-bottom: 1.25rem;
-
 }
 
 .hero-stats {
@@ -166,10 +165,10 @@ nav a:hover {
   font-size: 0.75rem;
   color: #00000099;
 }
-.stats-straight-line  {
-    height: 52px;
-    border-right: 2px solid rgba(0, 0, 0, 10%);
-    border-radius: 5px;
+.stats-straight-line {
+  height: 52px;
+  border-right: 2px solid rgba(0, 0, 0, 10%);
+  border-radius: 5px;
 }
 
 .customers {
@@ -185,21 +184,98 @@ nav a:hover {
 }
 
 .hero-img {
-    position: relative;
+  position: relative;
 }
 .hero-img img {
-    width: 100%;
+  width: 100%;
 }
 
 .hero-logos {
-    background-color: #000000;
-    padding: 2rem 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+  background-color: #000000;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
 /* END: Hero Section */
+
+/* New Arrivals Section  */
+.arrivals-section {
+  margin-top: 3.125rem;
+}
+.arrivals-title {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 0 auto;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.arrival-cards {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.arrival-card {
+  max-width: 12.375rem;
+  margin-left: 1rem;
+}
+.arrival-card img {
+  max-width: 12.375rem;
+}
+.arrival-card-title {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  letter-spacing: -0.5;
+  margin-top: 10px;
+}
+.card-rating {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.rating-number {
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.current-price {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.original-price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #00000066;
+  text-decoration: line-through;
+}
+.discount {
+  background-color: rgb(255, 51, 51, 10%);
+  border-radius: 62px;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 4px 14px;
+  color: rgb(255, 51, 51, 100%);
+}
+
+.arrival-btn {
+  background-color: #fff;
+  margin-top: 24px;
+  border: 1px solid rgb(0, 0, 0, 10%);
+  color: #000000;
+}
+
+.arrival-end-line {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 40px 1rem;
+}
+/* END: New Arrivals Section  */
 
 /* 10. Larger Screens (Tablet and Desktop) */
 @media (min-width: 768px) {
