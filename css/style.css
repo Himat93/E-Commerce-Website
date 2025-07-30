@@ -14,7 +14,7 @@ body {
   line-height: 1.5;
   background-color: #fff;
   color: #111;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 /* 3. Headings */
@@ -23,13 +23,14 @@ h2,
 h3 {
   font-family: "Archivo Black", sans-serif;
   color: #111;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 /* 4. Utility Container */
 .container {
   width: 100%;
-  max-width: 600px;
+  max-width: 24.375rem;
+  min-width: 300px;
   margin: 0 auto;
 }
 
@@ -58,65 +59,147 @@ nav a:hover {
 /* 6. Buttons */
 .btn {
   display: inline-block;
-  width: 100%;
+  width: 22.375rem;
   text-align: center;
   padding: 0.75rem 1rem;
-  background-color: #111;
+  background-color: #000000;
   color: #fff;
-  border-radius: 4px;
+  border-radius: 3.875rem;
   text-decoration: none;
   font-weight: 500;
   transition: background 0.3s ease;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .btn:hover {
   background-color: #333;
 }
 
-/* 7. Product Cards */
-.product-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 1rem;
+/* /////////////////////////////// */
+/* Header / Navigation */
+.header {
+}
+.header-cta {
+  background-color: #000000;
+}
+.cta-txt,
+.cta-txt-link {
+  font-size: 0.75rem;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
 }
 
-.product-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.product-card .info {
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
   padding: 1rem;
 }
-
-.product-card .title {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.product-card .price {
-  color: #222;
-  font-weight: bold;
-}
-
-/* 8. Grid (mobile first stack) */
-.grid {
-  display: grid;
+.navbar-right {
+  display: flex;
   gap: 1rem;
 }
-
-/* 9. Footer */
-footer {
-  margin-top: 2rem;
-  font-size: 0.875rem;
-  text-align: center;
-  color: #666;
-  border-top: 1px solid #ddd;
-  padding-top: 1rem;
+.navbar-right .burger-menu {
+  width: 1.5rem;
 }
+.navbar-right .logo {
+  width: 8rem;
+}
+
+.navbar-left {
+  display: flex;
+  gap: 0.75rem;
+}
+/*END: Header / Navigation */
+
+/* Hero Section */
+.hero-section {
+  background-color: #f2f0f1;
+}
+.hero-title {
+  font-family: "Archivo Black", sans-serif;
+  line-height: 34px;
+  font-size: 2.25rem;
+  font-weight: 900;
+  padding-top: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.hero-title-info {
+  font-size: 0.875rem;
+  color: #00000099;
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.hero-btn {
+  margin-bottom: 1.25rem;
+
+}
+
+.hero-stats {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1;
+  width: 17.375rem;
+}
+.hero-stats-sub-div {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-stats-sub-div div {
+  padding: 0;
+}
+.hero-stats-sub-div div h3,
+.hero-stats-sub-div div p {
+  padding: 0;
+  margin: 0;
+}
+.hero-stats-sub-div div h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.hero-stats-sub-div div p {
+  font-size: 0.75rem;
+  color: #00000099;
+}
+.stats-straight-line  {
+    height: 52px;
+    border-right: 2px solid rgba(0, 0, 0, 10%);
+    border-radius: 5px;
+}
+
+.customers {
+  margin-top: 1rem;
+}
+.customers h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.customers p {
+  font-size: 0.75rem;
+  color: #00000099;
+}
+
+.hero-img {
+    position: relative;
+}
+.hero-img img {
+    width: 100%;
+}
+
+.hero-logos {
+    background-color: #000000;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+/* END: Hero Section */
 
 /* 10. Larger Screens (Tablet and Desktop) */
 @media (min-width: 768px) {
