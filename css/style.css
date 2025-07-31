@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -14,7 +15,6 @@ body {
   line-height: 1.5;
   background-color: #fff;
   color: #111;
-  /* padding: 1rem; */
 }
 
 /* 3. Headings */
@@ -279,11 +279,11 @@ nav a:hover {
 
 /* Top Sellings */
 .browse {
-    background-color: rgba(240, 240, 240, 1);
-    border-radius: 20px;
-    padding: 2.5rem 1.5rem;
-    text-align: center;
-    margin-top: 3.125rem;
+  background-color: rgba(240, 240, 240, 1);
+  border-radius: 20px;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  margin-top: 3.125rem;
 }
 .browse-title {
   line-height: 1;
@@ -363,6 +363,134 @@ nav a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 /* END: Testimonial Section  */
+
+/* Newsletter Section  */
+.newsletter-container {
+  max-width: 22.375rem;
+  height: 18.313rem;
+  background-color: rgba(0, 0, 0, 1);
+  color: #fff;
+  padding: 1rem 1rem;
+  border-radius: 1.25rem;
+  padding: 2.5rem 1.25rem;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  margin-top: -6rem;
+  transform: translateY(50%);
+}
+.newsletter-container h1 {
+  line-height: 1;
+  color: #fff;
+}
+.email-form {
+  margin-top: 1.25rem;
+}
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 3.875rem;
+  overflow: hidden;
+  padding: 0 0.75rem;
+  margin-bottom: 0.625rem;
+}
+.input-wrapper img {
+  margin-right: 0.25rem;
+  margin-left: 0.5rem;
+  color: #666;
+}
+.input-wrapper input {
+  border: none;
+  outline: none;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.subscribe-btn {
+  max-width: 100%;
+  margin: 0;
+  background-color: #fff;
+  color: #000;
+}
+/* END: Newsletter Section  */
+
+/* Footer Section  */
+.footer-container {
+  background-color: rgba(240, 240, 240, 1);
+  padding: 190px 1.063rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 24.375rem;
+  margin: 0 auto;
+  gap: 1.25rem;
+}
+.footer-logo p {
+  margin-top: 0.875rem;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+}
+.social-icons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.footer-links {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.link-column {
+  width: 10rem;
+}
+.link-column h3 {
+  font-size: 0.875rem;
+  letter-spacing: 3;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.link-column ul {
+  list-style: none;
+  padding: 0;
+}
+.link-column ul li {
+  margin-bottom: 0.8rem;
+}
+.link-column ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.875rem;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 1.5rem 0 1.25rem;
+}
+
+.fotter-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 16.875rem;
+  margin: 0 auto;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.payment-icons img{
+  margin-right: -10px;
+}
+/* END: Footer Section  */
 
 /* 10. Larger Screens (Tablet and Desktop) */
 @media (min-width: 768px) {
