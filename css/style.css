@@ -315,6 +315,55 @@ nav a:hover {
 }
 /* END: Top Sellings */
 
+/* Testimonial Section  */
+.testimonial-section {
+  padding: 0 1rem;
+}
+.testimonial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.125rem;
+}
+.testimonial-header h1 {
+  line-height: 1;
+}
+.arrows {
+  display: flex;
+  gap: 1rem;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1.25rem;
+}
+.testimonial-card {
+  min-width: 22.375rem;
+  height: 11.625rem;
+  padding: 1.5rem 1.5rem;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.stars img {
+  width: 1.2em;
+}
+.name {
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: auto auto 0.2rem auto;
+}
+.testimonial-wrapper p {
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+/* END: Testimonial Section  */
+
 /* 10. Larger Screens (Tablet and Desktop) */
 @media (min-width: 768px) {
   nav ul {
