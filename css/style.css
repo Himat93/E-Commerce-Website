@@ -277,6 +277,44 @@ nav a:hover {
 }
 /* END: New Arrivals Section  */
 
+/* Top Sellings */
+.browse {
+    background-color: rgba(240, 240, 240, 1);
+    border-radius: 20px;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    margin-top: 3.125rem;
+}
+.browse-title {
+  line-height: 1;
+}
+.browse-styles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.casual {
+  position: relative;
+  width: 20rem;
+  height: 12rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.casual img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.casual span {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+/* END: Top Sellings */
+
 /* 10. Larger Screens (Tablet and Desktop) */
 @media (min-width: 768px) {
   nav ul {
